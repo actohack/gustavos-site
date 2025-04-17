@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gustavo Leiros - Leasing Consultant at The Avenues</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    setTimeout(function() {
+        alert("Thank you for reaching out! Gustavo will get back to you shortly.");
+    }, 100);
+});
+</script>
+
+<body>
+    <header class="header">
+        <img src="images/IMG_5726.JPG" alt="Company Logo" class="logo" />
+        <h1 class="name">GUSTAVO LEIROS</h1>
+        <p class="title">Leasing Consultant at The Avenues Apartments</p>
+        <p class="location">7915 Baymeadows Circle East, Jacksonville, FL 32256</p>
+    </header>
+
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.422336050034!2d-81.56587882460465!3d30.22924687481802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5caa7f0a9d675%3A0xd0dbcf7f593d7451!2s7915%20Baymeadows%20Cir%20E%2C%20Jacksonville%2C%20FL%2032256!5e0!3m2!1sen!2sus!4v1615177513173!5m2!1sen!2sus"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <section class="showcase">
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img src="images/IMG_5720.PNG" class="slide active" alt="Apartment Image 1" />
+                <img src="images/IMG_5721.PNG" class="slide" alt="Apartment Image 2" />
+                <img src="images/IMG_5722.PNG" class="slide" alt="Apartment Image 3" />
+                <img src="images/IMG_5723.PNG" class="slide" alt="Apartment Image 4" />
+                <img src="images/IMG_5724.PNG" class="slide" alt="Apartment Image 5" />
+            </div>
+        </div>
+        <div class="profile-placeholder">
+            <img src="images/gustavo.PNG" alt="Gustavo Leiros" class="gus-image" />
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Find Your Perfect Home</h2>
+        <p>Contact Gustavo today to schedule a tour or get more information.</p>
+        <a href="#contact" class="contact-button">Schedule Consultation</a>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2>Contact Gustavo</h2>
+        <form action="https://formspree.io/f/mldjklgn" method="POST" id="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email" />
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:gleiros@goldoller.com">gleiros@goldoller.com</a></p>
+            <p>Phone: <a href="tel:+19049909771">904-990-9771</a></p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Residents Say</h2>
+        <blockquote>
+            “Gustavo was super helpful and made my move stress-free!” — Jane D.
+        </blockquote>
+        <blockquote>
+            “He answered all my questions and showed me the perfect apartment.” — Alex M.
+        </blockquote>
+    </section>
+
+    <section class="social-media">
+        <h3>Connect with Gustavo</h3>
+        <a href="https://www.linkedin.com/in/gustavo-leiros-0070a7357" target="_blank">LinkedIn</a> |
+        <a href="https://www.facebook.com/TheAvenuesApartmentsFL/" target="_blank">Facebook</a>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Gustavo Leiros - The Avenues Apartments</p>
+        <p>Contact: <a href="mailto:gleiros@goldoller.com">gleiros@goldoller.com</a> | Phone: <a href="tel:+19049909771">904-990-9771</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
