@@ -106,7 +106,7 @@
         }
 
         .logo {
-            height: 65px;
+            height: 60px;
             width: auto;
             filter: drop-shadow(var(--shadow-soft));
         }
@@ -746,10 +746,10 @@
         }
 
         .footer-logo {
-            height: 85px;
+            height: 120px;
             width: auto;
             margin-bottom: 30px;
-            filter: brightness(0) invert(1);
+            filter: none;
         }
 
         .footer-description {
@@ -774,6 +774,10 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
         }
 
         .social-link:hover {
@@ -781,12 +785,21 @@
             border-color: var(--accent-color);
             transform: translateY(-5px);
             box-shadow: var(--glow-accent);
+            color: var(--surface-dark);
         }
 
-        .social-link img {
-            width: 28px;
-            height: 28px;
-            filter: brightness(0) invert(1);
+        .social-link.linkedin::before {
+            content: "in";
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .social-link.facebook::before {
+            content: "f";
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
         }
 
         .footer-section h4 {
@@ -1123,11 +1136,9 @@
                     <img src="IMG_5726.JPG" alt="GoldOller Real Estate Investments" class="footer-logo">
                     <p class="footer-description">Experience luxury living at The Avenues Apartments in Jacksonville, FL. Your premium lifestyle awaits with Gustavo Leiros as your trusted leasing consultant.</p>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/gustavoleiros/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <img src="icon-linkedin.png" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/gustavoleiros/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
                         </a>
-                        <a href="https://www.facebook.com/gustavo.leiros" target="_blank" class="social-link" aria-label="Facebook">
-                            <img src="icon-facebook.png" alt="Facebook">
+                        <a href="https://www.facebook.com/gustavo.leiros" target="_blank" class="social-link facebook" aria-label="Facebook">
                         </a>
                     </div>
                 </div>
